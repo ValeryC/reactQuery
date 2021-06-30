@@ -8,6 +8,18 @@
   pointer-events: none;
 }
 
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 30px;
+  background-color: #777;
+  font-size: 4rem;
+  color: #FFF;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
