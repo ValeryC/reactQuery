@@ -92,6 +92,7 @@ const Form = (props) => {
       return re.test(String(email).toLowerCase());
     }
 
+// add another second hunk
     if (email.length === 0) {
       setEmailErr("Need an email")
       return;
