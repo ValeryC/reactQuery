@@ -18,7 +18,7 @@ import i18n from "../../translations/i18n";
 
 const Form = (props) => {
 
-// add one line
+// add one 1st line
   let history = useHistory();
   const [activeStep, setActiveStep] = useState(1)
   const [customization, setCustomization] = useState(1)
