@@ -18,7 +18,6 @@ import i18n from "../../translations/i18n";
 
 const Form = (props) => {
 
-// add one 1st line
   let history = useHistory();
   const [activeStep, setActiveStep] = useState(1)
   const [customization, setCustomization] = useState(1)
@@ -92,7 +91,6 @@ const Form = (props) => {
       return re.test(String(email).toLowerCase());
     }
 
-// add another second hunk
     if (email.length === 0) {
       setEmailErr("Need an email")
       return;
@@ -215,8 +213,6 @@ const Form = (props) => {
   };
 
 
-
-
   const getArticles = () => {
     const token = localStorage.getItem('beltoken');
     axios({
@@ -311,7 +307,6 @@ const Form = (props) => {
 
   const resetFormToHome = () => {
     window.location.href = '/'
-// add another 3 hunk
   }
 
   const inputChangedHandler = (type, value) => {
@@ -621,7 +616,6 @@ const Form = (props) => {
           {i18n.t("yourOrderWill")}
         </h3>
       </FormStep>
-/* add another 4rd line*/
     </div>
   );
 
