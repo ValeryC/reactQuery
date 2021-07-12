@@ -17,6 +17,8 @@ import "./form.css";
 import i18n from "../../translations/i18n";
 
 const Form = (props) => {
+
+  // add one line 
   let history = useHistory();
   const [activeStep, setActiveStep] = useState(1)
   const [customization, setCustomization] = useState(1)
@@ -90,6 +92,7 @@ const Form = (props) => {
       return re.test(String(email).toLowerCase());
     }
 
+    // add line two
     if (email.length === 0) {
       setEmailErr("Need an email")
       return;
@@ -308,6 +311,7 @@ const Form = (props) => {
 
   const resetFormToHome = () => {
     window.location.href = '/'
+    // add line 3
   }
 
   const inputChangedHandler = (type, value) => {
@@ -617,9 +621,10 @@ const Form = (props) => {
           {i18n.t("yourOrderWill")}
         </h3>
       </FormStep>
-
+{/* add line 4 */}
     </div>
   );
+
 }
 
 export default withRouter(Form);
