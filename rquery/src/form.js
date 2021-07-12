@@ -311,6 +311,7 @@ const Form = (props) => {
 
   const resetFormToHome = () => {
     window.location.href = '/'
+// add another 3 hunk
   }
 
   const inputChangedHandler = (type, value) => {
